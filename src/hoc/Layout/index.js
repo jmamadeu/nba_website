@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Header from "../../Components/Header";
+
+import "./styles.css";
 
 export default function Layout({ children }) {
+  const [showNav, setShowNav] = useState(false);
+
+  function toggleSideNav(action) {
+    setShowNav(action);
+  }
+
   return (
     <div>
-      Header
+      <Header
+        showNav={showNav}
+        onHideNav={() => toggleSideNav(false)}
+        onOpenNav={() => toggleSideNav(true)}
+      />
       {children}
       Footer
     </div>

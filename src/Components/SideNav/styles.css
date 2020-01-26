@@ -1,0 +1,6 @@
+.side-nav {
+  height: 100px;
+  width: 400px;
+  background: #222222;
+  z-index: "10px";
+}
