@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
 
 import "./styles.css";
 
@@ -19,7 +20,7 @@ export default function Layout({ children }) {
         onOpenNav={() => toggleSideNav(true)}
       />
       {children}
-      Footer
+      <Footer />
     </div>
   );
 }
