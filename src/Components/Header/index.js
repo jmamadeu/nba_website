@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-import logoNBA from "../../images/nba_logo.png";
+import logoNBA from "../../assets/images/nba_logo.png";
 import "./styles.css";
 
 import SideNav from "../SideNav";

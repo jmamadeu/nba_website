@@ -1,5 +1,6 @@
 .featured_item {
   position: relative;
+  background: transparent;
 }
 
 .featured_item a {
@@ -8,11 +9,12 @@
   bottom: 0px;
   text-decoration: none;
   right: 0px;
+  background: transparent;
 }
 
 .featured_image {
-  height: 3000px;
-  background-size: cover !important ;
+  height: 330px;
+  background-size: cover !important;
   background-repeat: no-repeat !important;
 }
 
@@ -21,4 +23,8 @@
   top: 0px;
   width: 100%;
   padding: 20px;
+  background: transparent;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 28px;
 }

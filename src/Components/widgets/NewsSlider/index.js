@@ -3,21 +3,24 @@ import api from "../../../services/api";
 
 import SliderTemplates from "./slider";
 
-export default function NewsSlider() {
+export default function NewsSlider(props) {
   const [news, setNews] = useState([]);
+  const { start, amount } = props;
 
   useEffect(() => {
     async function getData() {
-      const { data } = await api.get(`/articles?_start=0&_end=3`);
+      const { data } = await api.get(
+        `/articles?_start=${start}&_end=${amount}`
+      );
 
       setNews(data);
     }
     getData();
-  }, []);
+  }, [start, amount]);
 
   return (
     <>
-      <SliderTemplates data={news} type="featured" />
+      <SliderTemplates data={news} type={props.type} />
     </>
   );
 }

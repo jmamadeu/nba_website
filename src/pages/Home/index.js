@@ -5,7 +5,12 @@ import NewsSlider from "../../components/widgets/NewsSlider";
 export default function Home() {
   return (
     <div>
-      <NewsSlider />
+      <NewsSlider
+        type="featured"
+        start={3}
+        amount={6}
+        settings={{ dots: false }}
+      />
     </div>
   );
 }
