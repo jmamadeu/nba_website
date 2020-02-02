@@ -20,7 +20,11 @@ export default function NewsSlider(props) {
 
   return (
     <>
-      <SliderTemplates data={news} type={props.type} />
+      <SliderTemplates
+        data={news}
+        type={props.type}
+        settings={props.settings}
+      />
     </>
   );
 }
