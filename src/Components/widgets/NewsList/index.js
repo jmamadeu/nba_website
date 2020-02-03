@@ -12,7 +12,6 @@ export default function NewsList(props) {
   const [start] = useState(props.start);
   const [end, setEnd] = useState(props.end + props.amount);
   const [amount] = useState(props.amount);
-  const [teams, setTeams] = useState([]);
 
   //get all articles
   useEffect(() => {

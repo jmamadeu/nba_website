@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 
 import "./styles.css";
@@ -13,6 +12,13 @@ export default function Button(props) {
         <div className="blue_btn" onClick={props.loadmore}>
           {props.cta}
         </div>
+      );
+      break;
+    case "linkTo":
+      template = (
+        <Link to={props.linkTo} className="blue_btn">
+          {props.cta}
+        </Link>
       );
       break;
     default:
